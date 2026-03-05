@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L'Art de Séduire Sans Jamais Se Faire Rejeter — Amour & Vérités</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --c1:#0d0d28;
+  --c2:#1a1a50;
+  --acc:#D4A840;
+  --acc2:#F0C860;
+  --acc-dark:#8B6820;
+  --noir:#08070A;
+  --noir2:#111012;
+  --noir3:#181619;
+  --blanc:#FAFAF8;
+  --gris:rgba(250,250,248,0.5);
+  --gris2:rgba(250,250,248,0.25);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--noir);color:var(--blanc);overflow-x:hidden;}
+
+/* ===== TOPBAR URGENCE ===== */
+.topbar{
+  background:var(--acc-dark);
+  padding:10px 40px;
+  display:flex;align-items:center;justify-content:center;
+  gap:20px;flex-wrap:wrap;
+  font-size:13px;font-weight:600;
+  position:sticky;top:0;z-index:200;
+}
+.topbar strong{color:var(--acc2);}
+.tb-cd{display:flex;align-items:center;gap:5px;}
+.tb-box{
+  background:rgba(0,0,0,0.3);padding:3px 9px;
+  border-radius:3px;font-weight:800;font-size:14px;
+  min-width:30px;text-align:center;
+  font-family:'Playfair Display',serif;
+}
+.tb-sep{font-weight:800;opacity:0.6;}
+.tb-btn{
+  background:var(--acc);color:var(--noir);
+  padding:5px 16px;border-radius:100px;
+  font-weight:800;font-size:12px;text-decoration:none;
+  transition:all 0.2s;white-space:nowrap;
+}
+.tb-btn:hover{background:var(--acc2);}
+
+/* ===== HERO ===== */
+.hero{
+  min-height:100vh;
+  background:linear-gradient(160deg,var(--c1),var(--c2));
+  display:grid;
+  grid-template-columns:1.1fr 0.9fr;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 30% 50%,rgba(0,0,0,0.4) 0%,transparent 70%);
+}
+.hero::after{
+  content:'01';
+  position:absolute;right:-30px;bottom:-60px;
+  font-family:'Playfair Display',serif;
+  font-size:280px;font-weight:900;
+  color:rgba(255,255,255,0.04);
+  line-height:1;pointer-events:none;
+  letter-spacing:-10px;
+}
+
+.hero-left{
+  padding:100px 60px 100px 80px;
+  position:relative;z-index:2;
+}
+
+.h-nav{
+  display:flex;align-items:center;gap:12px;
+  margin-bottom:36px;
+}
+.h-nav a{
+  font-size:12px;color:rgba(255,255,255,0.4);
+  text-decoration:none;transition:color 0.2s;
+}
+.h-nav a:hover{color:var(--acc);}
+.h-nav-sep{font-size:12px;color:rgba(255,255,255,0.2);}
+.h-num-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--acc);font-weight:700;
+  border:1px solid rgba(255,255,255,0.15);
+  padding:6px 14px;border-radius:100px;
+  margin-bottom:24px;
+}
+
+.h-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(36px,4.5vw,62px);
+  font-weight:900;line-height:1.08;
+  letter-spacing:-1.5px;
+  color:var(--blanc);
+  margin-bottom:12px;
+  animation:fadeUp 0.7s ease both;
+}
+.h-subtitle{
+  font-size:18px;font-style:italic;
+  color:var(--acc2);font-weight:300;
+  font-family:'Playfair Display',serif;
+  margin-bottom:32px;
+  animation:fadeUp 0.7s ease 0.1s both;
+}
+
+.h-meta{
+  display:flex;gap:20px;flex-wrap:wrap;
+  margin-bottom:40px;
+  animation:fadeUp 0.7s ease 0.2s both;
+}
+.hm-item{
+  display:flex;align-items:center;gap:8px;
+  font-size:13px;color:rgba(255,255,255,0.6);
+  font-weight:500;
+}
+.hm-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--acc);flex-shrink:0;
+}
+
+.h-hook{
+  background:rgba(0,0,0,0.25);
+  border-left:3px solid var(--acc);
+  padding:20px 24px;border-radius:0 8px 8px 0;
+  margin-bottom:40px;
+  animation:fadeUp 0.7s ease 0.3s both;
+}
+.h-hook p{
+  font-family:'Playfair Display',serif;
+  font-size:18px;font-style:italic;font-weight:400;
+  line-height:1.6;color:var(--blanc);
+}
+.h-hook p+p{
+  margin-top:8px;font-size:15px;
+  color:rgba(255,255,255,0.6);font-style:normal;
+  font-family:'Plus Jakarta Sans',sans-serif;font-weight:300;
+}
+
+.h-cta-group{
+  display:flex;flex-direction:column;gap:14px;
+  animation:fadeUp 0.7s ease 0.4s both;
+  max-width:460px;
+}
+.btn-main{
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--acc);color:var(--noir);
+  padding:18px 24px;border-radius:6px;
+  font-weight:800;font-size:15px;text-decoration:none;
+  transition:all 0.3s ease;position:relative;overflow:hidden;
+}
+.btn-main::before{
+  content:'';position:absolute;top:0;left:-100%;
+  width:100%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
+  transition:left 0.5s;
+}
+.btn-main:hover::before{left:100%;}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 10px 35px rgba(0,0,0,0.4);}
+.btn-price{
+  background:rgba(0,0,0,0.15);
+  padding:5px 12px;border-radius:4px;
+  font-family:'Playfair Display',serif;
+  font-size:18px;font-style:italic;
+}
+
+.btn-pack{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.15);
+  color:rgba(255,255,255,0.7);
+  padding:14px 24px;border-radius:6px;
+  font-size:14px;text-decoration:none;
+  transition:all 0.3s;font-weight:500;
+}
+.btn-pack:hover{border-color:var(--acc);color:var(--acc);}
+
+.h-trust{
+  display:flex;gap:16px;margin-top:20px;flex-wrap:wrap;
+  animation:fadeUp 0.7s ease 0.5s both;
+}
+.ht{
+  display:flex;align-items:center;gap:6px;
+  font-size:11px;color:rgba(255,255,255,0.35);
+}
+
+/* HERO RIGHT */
+.hero-right{
+  padding:60px 60px 60px 20px;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;z-index:2;
+}
+.book-visual{
+  width:220px;
+  border-radius:6px 10px 10px 6px;
+  overflow:hidden;
+  box-shadow:
+    -5px 5px 0 rgba(0,0,0,0.4),
+    -10px 10px 0 rgba(0,0,0,0.3),
+    -15px 15px 0 rgba(0,0,0,0.2),
+    0 30px 80px rgba(0,0,0,0.6);
+  animation:bookReveal 0.8s ease 0.3s both;
+  flex-shrink:0;
+}
+@keyframes bookReveal{from{opacity:0;transform:translateY(30px) rotate(3deg);}to{opacity:1;transform:translateY(0) rotate(0);}}
+
+.bv-inner{
+  padding:32px 26px 36px;
+  min-height:320px;
+  background:linear-gradient(160deg,var(--c1),var(--c2));
+  display:flex;flex-direction:column;justify-content:space-between;
+  position:relative;
+}
+.bv-inner::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:8px;background:rgba(0,0,0,0.25);
+}
+.bv-inner::after{
+  content:'';position:absolute;top:0;left:8px;right:0;bottom:0;
+  background:linear-gradient(135deg,rgba(255,255,255,0.1) 0%,transparent 40%);
+}
+.bv-emoji{font-size:40px;margin-bottom:12px;position:relative;z-index:1;}
+.bv-num{
+  font-family:'Playfair Display',serif;
+  font-size:72px;font-weight:900;
+  opacity:0.1;line-height:1;position:relative;z-index:1;
+}
+.bv-title{
+  font-family:'Playfair Display',serif;
+  font-size:15px;font-weight:700;
+  line-height:1.4;color:var(--acc);
+  position:relative;z-index:1;
+  margin-top:12px;
+}
+.bv-tag{
+  display:inline-block;font-size:9px;
+  text-transform:uppercase;letter-spacing:1.5px;
+  background:rgba(0,0,0,0.2);
+  padding:3px 10px;border-radius:100px;
+  opacity:0.7;margin-top:10px;position:relative;z-index:1;
+  font-weight:600;
+}
+
+/* ===== SECTIONS COMMUNES ===== */
+.section{padding:80px 80px;}
+.sec-label{
+  font-size:10px;letter-spacing:4px;text-transform:uppercase;
+  color:var(--acc);font-weight:700;margin-bottom:16px;display:block;
+}
+.sec-h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(28px,3.5vw,44px);
+  font-weight:700;line-height:1.15;
+  margin-bottom:48px;letter-spacing:-0.5px;
+}
+.sec-h2 em{font-style:italic;color:var(--acc);}
+
+/* ===== DOULEURS ===== */
+.section-pain{background:var(--noir2);}
+.pain-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:12px;max-width:800px;
+}
+.pain-item{
+  display:flex;align-items:center;gap:14px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:8px;padding:16px 20px;
+  transition:all 0.3s;font-size:14px;font-weight:500;
+  color:rgba(250,250,248,0.75);
+}
+.pain-item:hover{
+  border-color:rgba(255,255,255,0.12);
+  background:rgba(255,255,255,0.05);
+  transform:translateX(4px);
+}
+.pain-icon{font-size:22px;flex-shrink:0;}
+
+/* ===== PROMESSES ===== */
+.section-promises{background:var(--noir);}
+.promises-wrap{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:16px;max-width:800px;
+}
+.promise-item{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:20px 22px;
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius:8px;
+  transition:all 0.3s;
+  font-size:14px;font-weight:500;
+  color:rgba(250,250,248,0.8);
+  line-height:1.5;
+}
+.promise-item:hover{
+  background:rgba(255,255,255,0.04);
+  border-color:rgba(212,168,64,0.2);
+  transform:translateY(-2px);
+}
+.p-check{
+  width:22px;height:22px;border-radius:50%;flex-shrink:0;
+  background:var(--acc);color:var(--noir);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:11px;margin-top:1px;
+}
+
+/* ===== CHAPITRES ===== */
+.section-chapters{background:var(--noir2);}
+.chapters-list{max-width:700px;}
+.chapter-item{
+  display:grid;grid-template-columns:52px 1fr;
+  align-items:center;gap:20px;
+  padding:20px 24px;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+  transition:all 0.3s;
+  cursor:default;
+  position:relative;overflow:hidden;
+}
+.chapter-item::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;
+  width:2px;background:var(--acc);
+  transform:scaleY(0);transition:transform 0.3s;
+  transform-origin:bottom;
+}
+.chapter-item:hover{background:rgba(255,255,255,0.02);padding-left:32px;}
+.chapter-item:hover::before{transform:scaleY(1);}
+.ch-num{
+  font-family:'Playfair Display',serif;
+  font-size:28px;font-weight:900;
+  color:var(--acc);opacity:0.3;line-height:1;
+}
+.ch-title{
+  font-size:15px;font-weight:600;
+  color:rgba(250,250,248,0.8);line-height:1.4;
+}
+
+/* ===== TEMOIGNAGES ===== */
+.section-testi{background:var(--noir);}
+.testi-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:20px;max-width:960px;
+}
+.testi-card{
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:10px;padding:28px 24px;
+  transition:all 0.3s;
+}
+.testi-card:hover{
+  border-color:rgba(212,168,64,0.25);
+  transform:translateY(-4px);
+  box-shadow:0 12px 40px rgba(0,0,0,0.3);
+}
+.tc-stars{color:var(--acc);font-size:13px;letter-spacing:2px;margin-bottom:16px;}
+.tc-text{
+  font-family:'Playfair Display',serif;
+  font-size:14px;font-style:italic;font-weight:400;
+  color:rgba(250,250,248,0.65);line-height:1.75;
+  margin-bottom:20px;
+}
+.tc-author{display:flex;align-items:center;gap:12px;}
+.tc-av{
+  width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:16px;color:white;flex-shrink:0;
+}
+.tc-name{font-weight:700;font-size:13px;color:var(--blanc);}
+.tc-city{font-size:11px;color:var(--gris2);margin-top:2px;}
+
+/* ===== COMMANDER ===== */
+.section-order{
+  background:linear-gradient(160deg,var(--c1),var(--c2));
+  position:relative;overflow:hidden;
+}
+.section-order::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(0,0,0,0.3) 0%,transparent 70%);
+}
+.order-wrap{
+  max-width:800px;margin:0 auto;text-align:center;
+  position:relative;z-index:1;
+}
+.ow-badge{
+  display:inline-block;background:var(--acc);color:var(--noir);
+  font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  padding:5px 16px;border-radius:100px;margin-bottom:20px;
+}
+.ow-title{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(32px,4vw,52px);
+  font-weight:900;line-height:1.1;
+  letter-spacing:-1px;margin-bottom:12px;
+}
+.ow-sub{
+  font-size:16px;color:rgba(255,255,255,0.55);
+  line-height:1.7;font-weight:300;
+  max-width:500px;margin:0 auto 40px;
+}
+.ow-price-box{
+  background:rgba(0,0,0,0.3);
+  border:1px solid rgba(255,255,255,0.12);
+  border-radius:12px;padding:32px 40px;
+  display:inline-block;margin-bottom:32px;
+  min-width:300px;
+}
+.owp-old{
+  font-size:14px;color:rgba(255,255,255,0.3);
+  text-decoration:line-through;margin-bottom:6px;
+}
+.owp-price{
+  font-family:'Playfair Display',serif;
+  font-size:56px;font-weight:900;
+  color:var(--acc);line-height:1;
+  font-style:italic;
+}
+.owp-label{
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  color:rgba(255,255,255,0.4);margin-top:8px;font-weight:600;
+}
+
+.ow-ctas{
+  display:flex;flex-direction:column;
+  gap:14px;max-width:480px;margin:0 auto;
+}
+.ow-btn-main{
+  display:flex;align-items:center;justify-content:center;
+  gap:12px;background:var(--acc);color:var(--noir);
+  padding:18px 32px;border-radius:6px;
+  font-weight:800;font-size:16px;text-decoration:none;
+  transition:all 0.3s;
+}
+.ow-btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,0.4);}
+.ow-btn-pack{
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(0,0,0,0.25);
+  border:1px solid rgba(255,255,255,0.12);
+  color:rgba(255,255,255,0.65);
+  padding:14px 24px;border-radius:6px;
+  font-size:14px;font-weight:600;text-decoration:none;
+  transition:all 0.3s;
+}
+.ow-btn-pack:hover{border-color:var(--acc);color:var(--acc);}
+.ow-garantie{
+  font-size:12px;color:rgba(255,255,255,0.3);
+  margin-top:16px;line-height:1.6;
+}
+
+/* ===== GARANTIE ===== */
+.section-garantie{background:var(--noir2);}
+.garantie-box{
+  max-width:600px;
+  border:1px solid rgba(255,255,255,0.06);
+  border-radius:10px;padding:40px;
+  text-align:center;
+  position:relative;
+}
+.gb-badge{
+  position:absolute;top:-14px;left:50%;
+  transform:translateX(-50%);
+  background:var(--acc);color:var(--noir);
+  font-size:9px;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  padding:4px 16px;border-radius:100px;white-space:nowrap;
+}
+.gb-icon{font-size:44px;display:block;margin-bottom:16px;}
+.gb-title{
+  font-family:'Playfair Display',serif;
+  font-size:24px;font-weight:700;font-style:italic;
+  margin-bottom:14px;
+}
+.gb-text{font-size:15px;color:var(--gris);line-height:1.75;font-weight:300;}
+
+/* ===== NAVIGATION EBOOKS ===== */
+.ebook-nav{
+  background:var(--noir);
+  padding:40px 80px;
+  display:flex;align-items:center;justify-content:space-between;
+  border-top:1px solid rgba(255,255,255,0.05);
+  gap:20px;
+}
+.nav-btn{
+  display:flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:600;color:var(--gris);
+  text-decoration:none;transition:all 0.3s;
+  padding:10px 18px;border:1px solid rgba(255,255,255,0.08);
+  border-radius:6px;
+}
+.nav-btn:hover{color:var(--acc);border-color:var(--acc);}
+.nav-center{
+  font-size:12px;color:rgba(255,255,255,0.2);
+  letter-spacing:1px;text-transform:uppercase;
+}
+
+/* WA STICKY */
+.wa-float{
+  position:fixed;bottom:28px;right:28px;
+  z-index:1000;
+  display:flex;flex-direction:column;align-items:flex-end;gap:8px;
+}
+.wa-bubble{
+  background:var(--noir2);border:1px solid rgba(37,211,102,0.3);
+  color:rgba(250,250,248,0.7);font-size:12px;
+  padding:8px 14px;border-radius:4px;white-space:nowrap;
+  display:none;
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
+}
+.wa-btn{
+  width:54px;height:54px;background:#25D366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;text-decoration:none;
+  box-shadow:0 6px 24px rgba(37,211,102,0.4);
+  animation:waFloat 2.5s ease-in-out infinite;
+}
+@keyframes waFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);}}
+.wa-btn:hover~.wa-bubble{display:block;}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease;}
+.reveal.vis{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .hero{grid-template-columns:1fr;}
+  .hero-right{display:none;}
+  .hero-left{padding:80px 40px;}
+  .section{padding:60px 40px;}
+  .testi-grid{grid-template-columns:repeat(2,1fr);}
+  .ebook-nav{padding:28px 40px;}
+}
+@media(max-width:700px){
+  .pain-grid,.promises-wrap{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .section{padding:60px 20px;}
+  .hero-left{padding:60px 20px;}
+  .ebook-nav{padding:20px;}
+  .nav-center{display:none;}
+  .topbar{padding:8px 16px;}
+  .ow-price-box{padding:24px 24px;min-width:unset;width:100%;}
+}
+
+/* ===== AUTEUR PIERRE HOUNMENOU — VISIBLE ===== */
+.section-pierre{
+  background:#FAFAF5; /* Fond CLAIR — contraste maximal */
+  color:#0A0A0F;
+  position:relative;overflow:hidden;
+  border-top:4px solid var(--acc);
+}
+.section-pierre .sec-label{color:var(--acc-dark);}
+.section-pierre .sec-h2{color:#0A0A0F;}
+.section-pierre .sec-h2 em{color:var(--acc-dark);}
+
+/* GRILLE PRINCIPALE */
+.pierre-top{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:60px;align-items:start;
+  max-width:1000px;
+  margin-bottom:60px;
+}
+
+/* COLONNE GAUCHE — Photo + médias */
+.pierre-media-col{display:flex;flex-direction:column;gap:20px;}
+
+/* ZONE PHOTO PRINCIPALE */
+.pierre-photo-main{
+  width:100%;aspect-ratio:3/4;
+  background:linear-gradient(145deg,#E8E4D8,#D4CDB8);
+  border-radius:16px;
+  border:2px dashed rgba(0,0,0,0.15);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:12px;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  transition:all 0.3s;
+}
+.pierre-photo-main:hover{border-color:var(--acc);background:linear-gradient(145deg,#EDE9DC,#DDD6C0);}
+.pierre-photo-main img{
+  width:100%;height:100%;
+  object-fit:cover;border-radius:14px;
+  display:none; /* Montré quand src est défini */
+}
+.ppm-icon{font-size:48px;opacity:0.35;}
+.ppm-label{
+  font-size:13px;font-weight:700;
+  color:rgba(0,0,0,0.4);letter-spacing:0.5px;
+  text-align:center;line-height:1.5;
+}
+.ppm-sub{font-size:11px;color:rgba(0,0,0,0.25);font-weight:400;}
+.pierre-photo-badge{
+  position:absolute;top:14px;left:14px;
+  background:var(--acc);color:#0A0A0F;
+  font-size:9px;font-weight:800;letter-spacing:2px;
+  text-transform:uppercase;padding:4px 12px;
+  border-radius:100px;
+}
+
+/* ZONE VIDÉO */
+.pierre-video-zone{
+  width:100%;aspect-ratio:16/9;
+  background:linear-gradient(145deg,#1a1a2e,#2d2d4a);
+  border-radius:12px;
+  border:2px dashed rgba(255,255,255,0.15);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:10px;
+  cursor:pointer;transition:all 0.3s;
+  position:relative;overflow:hidden;
+}
+.pierre-video-zone:hover{border-color:var(--acc);}
+.pierre-video-zone iframe,
+.pierre-video-zone video{
+  position:absolute;inset:0;width:100%;height:100%;
+  border-radius:10px;display:none;
+}
+.pvz-play{
+  width:52px;height:52px;background:rgba(255,255,255,0.15);
+  border:2px solid rgba(255,255,255,0.3);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:20px;color:white;
+  transition:all 0.3s;
+}
+.pierre-video-zone:hover .pvz-play{background:var(--acc);border-color:var(--acc);color:#0A0A0F;}
+.pvz-label{font-size:12px;color:rgba(255,255,255,0.5);font-weight:600;letter-spacing:0.5px;}
+.pvz-sub{font-size:10px;color:rgba(255,255,255,0.25);}
+
+/* PHOTOS SECONDAIRES (galerie) */
+.pierre-photos-row{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+}
+.pierre-photo-sm{
+  aspect-ratio:1/1;
+  background:linear-gradient(145deg,#E8E4D8,#D4CDB8);
+  border-radius:10px;
+  border:2px dashed rgba(0,0,0,0.12);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:6px;cursor:pointer;transition:all 0.3s;
+  position:relative;overflow:hidden;
+}
+.pierre-photo-sm:hover{border-color:var(--acc);}
+.pierre-photo-sm img{
+  width:100%;height:100%;object-fit:cover;
+  border-radius:8px;display:none;
+}
+.pps-icon{font-size:24px;opacity:0.3;}
+.pps-label{font-size:10px;font-weight:700;color:rgba(0,0,0,0.3);text-align:center;}
+
+/* COLONNE DROITE — Bio */
+.pierre-bio-col{}
+.pierre-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:10px;font-weight:800;letter-spacing:3px;
+  text-transform:uppercase;color:var(--acc-dark);
+  margin-bottom:16px;
+}
+.pierre-eyebrow::before{
+  content:'';width:24px;height:2px;
+  background:var(--acc);display:block;
+}
+.pierre-name{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(32px,4vw,52px);
+  font-weight:900;letter-spacing:-1.5px;
+  line-height:1.05;margin-bottom:8px;
+  color:#0A0A0F;
+}
+.pierre-title-line{
+  font-family:'Playfair Display',serif;
+  font-size:18px;font-style:italic;font-weight:400;
+  color:var(--acc-dark);margin-bottom:28px;line-height:1.5;
+}
+.pierre-divider{
+  width:60px;height:3px;
+  background:linear-gradient(90deg,var(--acc),var(--acc2));
+  border-radius:2px;margin-bottom:28px;
+}
+.pierre-bio-text{
+  font-size:15px;color:#3A3A4A;
+  line-height:1.95;font-weight:400;margin-bottom:32px;
+}
+.pierre-bio-text strong{color:#0A0A0F;font-weight:700;}
+.pierre-bio-text em{
+  color:var(--acc-dark);font-style:normal;
+  font-weight:600;
+}
+
+/* KPIs */
+.pierre-kpis{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:12px;margin-bottom:28px;
+}
+.pkpi{
+  background:white;
+  border:1px solid rgba(0,0,0,0.08);
+  box-shadow:0 2px 12px rgba(0,0,0,0.06);
+  border-radius:12px;padding:18px 14px;
+  text-align:center;transition:all 0.3s;
+}
+.pkpi:hover{
+  border-color:var(--acc);
+  box-shadow:0 4px 20px rgba(0,0,0,0.1);
+  transform:translateY(-2px);
+}
+.pkpi-n{
+  font-family:'Playfair Display',serif;
+  font-size:32px;font-weight:900;font-style:italic;
+  color:var(--acc-dark);display:block;line-height:1;
+}
+.pkpi-l{
+  font-size:9px;text-transform:uppercase;
+  letter-spacing:1.5px;color:rgba(0,0,0,0.35);
+  margin-top:5px;font-weight:700;
+}
+
+/* CHIPS */
+.pierre-chips{
+  display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;
+}
+.pierre-chip{
+  display:inline-flex;align-items:center;gap:6px;
+  background:white;border:1px solid rgba(0,0,0,0.1);
+  border-radius:100px;padding:7px 16px;
+  font-size:12px;color:#3A3A4A;font-weight:600;
+  box-shadow:0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* CITATION */
+.pierre-citation{
+  background:linear-gradient(135deg,var(--c1),var(--c2));
+  border-radius:12px;padding:24px 28px;
+  position:relative;overflow:hidden;
+}
+.pierre-citation::before{
+  content:'"';
+  position:absolute;top:-10px;left:16px;
+  font-family:'Playfair Display',serif;
+  font-size:120px;color:rgba(255,255,255,0.06);
+  line-height:1;font-weight:900;
+}
+.pierre-citation p{
+  font-family:'Playfair Display',serif;
+  font-size:15px;font-style:italic;
+  color:rgba(255,255,255,0.8);
+  line-height:1.75;position:relative;z-index:1;
+}
+.pierre-citation-author{
+  margin-top:14px;display:flex;align-items:center;gap:10px;
+  position:relative;z-index:1;
+}
+.pca-avatar{
+  width:34px;height:34px;border-radius:50%;
+  background:var(--acc);color:#0A0A0F;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:14px;
+}
+.pca-name{font-size:13px;font-weight:700;color:rgba(255,255,255,0.8);}
+.pca-role{font-size:11px;color:rgba(255,255,255,0.4);}
+
+/* SECTION MÉDIAS SUPPLÉMENTAIRES */
+.pierre-media-extra{
+  max-width:1000px;
+  border-top:1px solid rgba(0,0,0,0.08);
+  padding-top:48px;
+}
+.pme-title{
+  font-family:'Playfair Display',serif;
+  font-size:22px;font-weight:700;font-style:italic;
+  color:#0A0A0F;margin-bottom:24px;
+}
+.pme-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.pme-slot{
+  aspect-ratio:4/3;
+  border-radius:12px;
+  border:2px dashed rgba(0,0,0,0.12);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:8px;cursor:pointer;
+  background:linear-gradient(145deg,#F0EDE4,#E4DFD0);
+  transition:all 0.3s;position:relative;overflow:hidden;
+}
+.pme-slot:hover{border-color:var(--acc);transform:translateY(-2px);}
+.pme-slot img,.pme-slot video{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;border-radius:10px;display:none;
+}
+.pme-icon{font-size:32px;opacity:0.3;}
+.pme-label{font-size:12px;font-weight:700;color:rgba(0,0,0,0.35);text-align:center;}
+.pme-type{
+  position:absolute;top:10px;right:10px;
+  background:rgba(0,0,0,0.5);color:white;
+  font-size:9px;font-weight:700;letter-spacing:1px;
+  padding:3px 8px;border-radius:100px;
+  text-transform:uppercase;
+}
+
+/* RESPONSIVE PIERRE */
+@media(max-width:900px){
+  .pierre-top{grid-template-columns:1fr;gap:40px;}
+  .pierre-photos-row{grid-template-columns:repeat(4,1fr);}
+  .pierre-media-col{flex-direction:row;flex-wrap:wrap;}
+  .pierre-photo-main{flex:1;min-width:200px;}
+  .pierre-video-zone{flex:1;min-width:200px;}
+  .pme-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .pierre-kpis{grid-template-columns:repeat(3,1fr);}
+  .pierre-photos-row{grid-template-columns:1fr 1fr;}
+  .pierre-media-col{flex-direction:column;}
+  .pme-grid{grid-template-columns:1fr 1fr;}
+  .section-pierre{padding:48px 20px!important;}
+}
+
+/* ===== FAQ ===== */
+/* ===== FAQ ===== */
+.section-faq{background:var(--noir2);}
+.faq-wrap{max-width:760px;}
+.faq-item{
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  cursor:pointer;
+}
+.faq-item:last-child{border-bottom:none;}
+.faq-q{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:22px 4px;gap:20px;
+  font-weight:700;font-size:15px;
+  color:rgba(250,250,248,0.85);
+  letter-spacing:-0.2px;
+  transition:color 0.2s;
+  user-select:none;
+}
+.faq-q:hover{color:var(--acc2);}
+.faq-item.open .faq-q{color:var(--acc2);}
+.faq-icon{
+  width:30px;height:30px;border-radius:50%;flex-shrink:0;
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.1);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:15px;color:var(--acc);
+  transition:all 0.3s;
+}
+.faq-item.open .faq-icon{
+  background:var(--acc);color:var(--noir);
+  border-color:var(--acc);transform:rotate(45deg);
+}
+.faq-a{
+  overflow:hidden;max-height:0;
+  transition:max-height 0.38s ease, padding 0.28s ease;
+  padding-bottom:0;
+}
+.faq-item.open .faq-a{max-height:220px;padding-bottom:22px;}
+.faq-a-inner{
+  font-size:14px;color:rgba(250,250,248,0.55);
+  line-height:1.85;font-weight:300;
+  padding-right:50px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <span>⚡ <strong>Livraison immédiate</strong> sur WhatsApp après paiement</span>
+  <div class="tb-cd">
+    <div class="tb-box" id="h">05</div><span class="tb-sep">:</span>
+    <div class="tb-box" id="m">42</div><span class="tb-sep">:</span>
+    <div class="tb-box" id="s">17</div>
+  </div>
+  <a href="#commander" class="tb-btn">Commander →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="h-nav">
+      <a href="index.html">Tous les guides</a>
+      <span class="h-nav-sep">/</span>
+      <span style="color:var(--acc);font-size:12px;font-weight:600;">Guide #01</span>
+    </div>
+
+    <div class="h-num-badge">
+      <span>🎯</span>
+      Guide 01 · Hommes 18–38 ans · 93 pages
+    </div>
+
+    <h1 class="h-title">L'Art de Séduire Sans Jamais Se Faire Rejeter</h1>
+    <p class="h-subtitle">Le guide complet de l'homme africain moderne</p>
+
+    <div class="h-meta">
+      <div class="hm-item"><div class="hm-dot"></div>Hommes 18–38 ans</div>
+      <div class="hm-item"><div class="hm-dot"></div>93 pages</div>
+      <div class="hm-item"><div class="hm-dot"></div>Livraison WhatsApp</div>
+      <div class="hm-item"><div class="hm-dot"></div>Garanti 7 jours</div>
+    </div>
+
+    <div class="h-hook">
+      <p>Tu approches avec courage. Elle dit non. Encore et encore.</p>
+      <p>Ce n'est pas ta faute — personne ne t'a jamais appris.</p>
+    </div>
+
+    <div class="h-cta-group">
+      <a href="https://wa.me/VOTRE_NUMERO?text=Bonjour%2C+je+commande+le+guide+%231+%E2%80%94+L'Art de Séduire Sans Jamais Se Faire Rejeter+%E2%80%94+4 000+FCFA" target="_blank" class="btn-main">
+        <span>📲 Commander ce guide maintenant</span>
+        <span class="btn-price">3 999 FCFA</span>
+      </a>
+      <a href="https://wa.me/VOTRE_NUMERO?text=Bonjour%2C+je+commande+le+PACK+COMPLET+10+guides+%E2%80%94+25+000+FCFA" target="_blank" class="btn-pack">
+        🔥 Ou prendre le Pack Complet (10 guides) — 25 000 FCFA
+      </a>
+    </div>
+    <div class="h-trust">
+      <div class="ht">🔒 <span>Mobile Money sécurisé</span></div>
+      <div class="ht">⚡ <span>Reçu en &lt;5 min</span></div>
+      <div class="ht">↩️ <span>Remboursé 7 jours</span></div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="book-visual">
+      <div class="bv-inner">
+        <div class="bv-emoji">🎯</div>
+        <div class="bv-num">01</div>
+        <div class="bv-title">L'Art de Séduire Sans Jamais Se Faire Rejeter</div>
+        <span class="bv-tag">Hommes 18–38 ans</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TU RECONNAIS-TU ? -->
+<section class="section section-pain">
+  <div class="sw reveal">
+    <span class="sec-label">Tu te reconnais ici ?</span>
+    <h2 class="sec-h2">Ces situations que tu <em>vis peut-être en ce moment</em></h2>
+    <div class="pain-grid">
+      <div class="pain-item"><span class="pain-icon">💔</span><span>Tu te fais rejeter même quand tu fais tout bien</span></div><div class="pain-item"><span class="pain-icon">😶</span><span>Tu ne sais pas quoi dire après « bonjour »</span></div><div class="pain-item"><span class="pain-icon">📵</span><span>Elle répond en 2 mots puis disparaît</span></div><div class="pain-item"><span class="pain-icon">👻</span><span>Tu es en zone amicale sans l'avoir voulu</span></div><div class="pain-item"><span class="pain-icon">🔄</span><span>Tu vois d'autres réussir sans comprendre pourquoi</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUE TU VAS APPRENDRE -->
+<section class="section section-promises">
+  <div class="reveal">
+    <span class="sec-label">Ce que tu vas obtenir</span>
+    <h2 class="sec-h2">En lisant ce guide, tu vas <em>concrètement</em>...</h2>
+    <div class="promises-wrap">
+      <div class="promise-item"><div class="p-check">✓</div><span>Approcher n'importe quelle femme sans peur du rejet</span></div><div class="promise-item"><div class="p-check">✓</div><span>Tenir une conversation qui crée l'attraction naturellement</span></div><div class="promise-item"><div class="p-check">✓</div><span>Séduire sur WhatsApp et Instagram avec méthode</span></div><div class="promise-item"><div class="p-check">✓</div><span>Transformer l'intérêt en désir en 3 étapes concrètes</span></div><div class="promise-item"><div class="p-check">✓</div><span>Ne plus jamais finir en zone amicale involontairement</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- LES CHAPITRES -->
+<section class="section section-chapters">
+  <div class="reveal">
+    <span class="sec-label">Au programme</span>
+    <h2 class="sec-h2">7 chapitres, <em>zéro remplissage</em></h2>
+    <div class="chapters-list">
+      <div class="chapter-item"><div class="ch-num">01</div><div class="ch-title">La psychologie féminine enfin expliquée simplement</div></div><div class="chapter-item"><div class="ch-num">02</div><div class="ch-title">L'approche — les 7 premières secondes qui décident tout</div></div><div class="chapter-item"><div class="ch-num">03</div><div class="ch-title">La conversation qui crée l'attraction sans effort</div></div><div class="chapter-item"><div class="ch-num">04</div><div class="ch-title">Séduction digitale — WhatsApp, Instagram, TikTok</div></div><div class="chapter-item"><div class="ch-num">05</div><div class="ch-title">Gérer le rejet avec classe et en sortir plus fort</div></div><div class="chapter-item"><div class="ch-num">06</div><div class="ch-title">De l'intérêt au premier rendez-vous</div></div><div class="chapter-item"><div class="ch-num">07</div><div class="ch-title">Les erreurs qui tuent l'attraction (et comment les éviter)</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section class="section section-testi">
+  <div class="reveal">
+    <span class="sec-label">Ils ont lu — ils témoignent</span>
+    <h2 class="sec-h2">Des résultats <em>réels</em>, pas des promesses</h2>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+      <div class="tc-stars">★★★★★</div>
+      <p class="tc-text">"Après le chapitre 3, j'ai eu le numéro d'une fille que je n'osais même pas regarder avant. Je ne reviens plus en arrière."</p>
+      <div class="tc-author">
+        <div class="tc-av" style="background:linear-gradient(135deg,#1a1a50,#0d0d28);">K</div>
+        <div><div class="tc-name">Koffi A.</div><div class="tc-city">Abidjan, CI</div></div>
+      </div>
+    </div><div class="testi-card reveal">
+      <div class="tc-stars">★★★★★</div>
+      <p class="tc-text">"J'appliquais les conseils du guide depuis 2 semaines. J'ai eu 3 numéros en une soirée. Le chapitre sur l'approche est révolutionnaire."</p>
+      <div class="tc-author">
+        <div class="tc-av" style="background:linear-gradient(135deg,#1a1a50,#0d0d28);">S</div>
+        <div><div class="tc-name">Seydou M.</div><div class="tc-city">Bamako, ML</div></div>
+      </div>
+    </div><div class="testi-card reveal">
+      <div class="tc-stars">★★★★★</div>
+      <p class="tc-text">"Le plus grand problème que j'avais c'était de ne pas savoir quoi dire. Ce guide m'a donné une méthode claire. Je n'ai plus peur de l'approche."</p>
+      <div class="tc-author">
+        <div class="tc-av" style="background:linear-gradient(135deg,#1a1a50,#0d0d28);">É</div>
+        <div><div class="tc-name">Éric T.</div><div class="tc-city">Cotonou, BJ</div></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMANDER -->
+<section class="section section-order" id="commander">
+  <div class="order-wrap reveal">
+    <span class="ow-badge">Commander maintenant</span>
+    <h2 class="ow-title">L'Art de Séduire Sans Jamais Se Faire Rejeter</h2>
+    <p class="ow-sub">Livraison immédiate sur WhatsApp. Paiement Mobile Money. Sans compte, sans délai.</p>
+    <div class="ow-price-box">
+      <div class="owp-old">Valeur réelle : 5000 FCFA</div>
+      <div class="owp-price">3 999FCFA</div>
+      <div class="owp-label">93 pages · PDF · Accès à vie</div>
+    </div>
+    <div class="ow-ctas">
+      <a href="https://wa.me/VOTRE_NUMERO?text=Bonjour%2C+je+commande+le+guide+%231+%E2%80%94+L'Art de Séduire Sans Jamais Se Faire Rejeter+%E2%80%94+4 000+FCFA" target="_blank" class="ow-btn-main">
+        📲 Je commande ce guide — 3 998 FCFA
+      </a>
+      <a href="https://wa.me/VOTRE_NUMERO?text=Bonjour%2C+je+commande+le+PACK+COMPLET+10+guides+%E2%80%94+25+000+FCFA" target="_blank" class="ow-btn-pack">
+        <span>🔥 Pack Complet — 10 guides</span>
+        <span style="color:var(--acc);font-weight:800;">25 000 FCFA</span>
+      </a>
+      <div class="ow-garantie">🔒 Paiement sécurisé · ⚡ Livraison &lt;5 min · ↩️ Satisfait ou remboursé 7 jours</div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION PIERRE HOUNMENOU — Auteur & Créateur          -->
+<!-- ══════════════════════════════════════════════════════ -->
+<section class="section section-pierre">
+
+  <!-- GRILLE PRINCIPALE : Photo gauche / Bio droite -->
+  <div class="pierre-top reveal">
+
+    <!-- ── COLONNE GAUCHE : Tes photos & vidéo ── -->
+    <div class="pierre-media-col">
+
+      <!-- PHOTO PRINCIPALE (ta meilleure photo) -->
+      <div class="pierre-photo-main" title="Clique pour voir ta photo">
+        <!-- ✅ COMMENT AJOUTER TA PHOTO :
+             Remplace le src="..." ci-dessous par le lien de ta photo
+             Exemple : src="https://i.imgur.com/XXXXXX.jpg"
+             Puis retire style="display:none" sur la balise img -->
+        <img src="" alt="Pierre HOUNMENOU" style="display:none">
+        <!-- Placeholder visible tant qu'aucune photo n'est ajoutée -->
+        <span class="ppm-icon">📸</span>
+        <span class="ppm-label">Ta photo principale<br>ici</span>
+        <span class="ppm-sub">Recommandé : portrait professionnel</span>
+        <span class="pierre-photo-badge">Photo</span>
+      </div>
+
+      <!-- VIDÉO DE PRÉSENTATION -->
+      <div class="pierre-video-zone" title="Ajoute ta vidéo de présentation">
+        <!-- ✅ COMMENT AJOUTER TA VIDÉO :
+             Option 1 — YouTube : remplace src="" par ton lien embed YouTube
+             Exemple : src="https://www.youtube.com/embed/XXXXXXXXXX"
+             Option 2 — MP4 direct : utilise la balise <video> à la place
+             Puis retire style="display:none" sur l'élément voulu -->
+        <iframe src="" frameborder="0" allowfullscreen style="display:none"></iframe>
+        <!-- Placeholder vidéo -->
+        <div class="pvz-play">▶</div>
+        <span class="pvz-label">Ta vidéo de présentation</span>
+        <span class="pvz-sub">YouTube · TikTok · MP4</span>
+      </div>
+
+      <!-- 2 PETITES PHOTOS SUPPLÉMENTAIRES -->
+      <div class="pierre-photos-row">
+        <div class="pierre-photo-sm" title="Photo action / terrain">
+          <!-- ✅ Remplace src="" par le lien de ta photo
+               Puis retire style="display:none" -->
+          <img src="" alt="Pierre en action" style="display:none">
+          <span class="pps-icon">📷</span>
+          <span class="pps-label">Photo action</span>
+        </div>
+        <div class="pierre-photo-sm" title="Photo avec clients ou événement">
+          <!-- ✅ Remplace src="" par le lien de ta photo -->
+          <img src="" alt="Pierre avec clients" style="display:none">
+          <span class="pps-icon">🤝</span>
+          <span class="pps-label">Événement</span>
+        </div>
+      </div>
+
+    </div><!-- fin .pierre-media-col -->
+
+    <!-- ── COLONNE DROITE : Présentation & Bio ── -->
+    <div class="pierre-bio-col">
+      <span class="pierre-eyebrow">Qui a créé ce guide ?</span>
+      <h2 class="pierre-name">Pierre HOUNMENOU</h2>
+      <p class="pierre-title-line">
+        E-commerçant · Créateur de produits digitaux<br>
+        Spécialiste de la niche féminine en Afrique francophone
+      </p>
+      <div class="pierre-divider"></div>
+
+      <p class="pierre-bio-text">
+        Pierre HOUNMENOU est l'une des <strong>références du commerce digital
+        en Afrique francophone</strong>. Spécialisé dans la niche des femmes,
+        il crée des produits qui répondent aux <em>vrais besoins du terrain africain</em>
+        — pas des contenus traduits ou importés d'ailleurs.<br><br>
+
+        Avec <strong>plus de 3 430 ventes réalisées</strong> sur ses produits digitaux,
+        Pierre ne théorise pas — il applique et il prouve. Chaque guide
+        est le résultat d'une recherche approfondie sur les réalités
+        amoureuses et sociales de nos pays.<br><br>
+
+        Reconnu comme un <strong>inspirateur, un motivateur et une ressource
+        incontournable</strong> pour les entrepreneurs et lecteurs d'Afrique
+        francophone — Pierre est la preuve vivante qu'on peut construire
+        quelque chose de grand depuis le continent.
+      </p>
+
+      <div class="pierre-kpis">
+        <div class="pkpi">
+          <span class="pkpi-n">3 430+</span>
+          <div class="pkpi-l">Ventes réalisées</div>
+        </div>
+        <div class="pkpi">
+          <span class="pkpi-n">10</span>
+          <div class="pkpi-l">Guides créés</div>
+        </div>
+        <div class="pkpi">
+          <span class="pkpi-n">6+</span>
+          <div class="pkpi-l">Pays touchés</div>
+        </div>
+      </div>
+
+      <div class="pierre-chips">
+        <span class="pierre-chip">🌍 Afrique Francophone</span>
+        <span class="pierre-chip">📦 Produits digitaux</span>
+        <span class="pierre-chip">💡 Inspirateur</span>
+        <span class="pierre-chip">🎯 Spécialiste niche féminine</span>
+      </div>
+
+      <div class="pierre-citation">
+        <p>"Mon objectif est simple : donner aux Africains francophones
+        les outils concrets pour transformer leur vie amoureuse —
+        avec des méthodes qui marchent dans notre réalité,
+        pas dans celle des autres."</p>
+        <div class="pierre-citation-author">
+          <div class="pca-avatar">P</div>
+          <div>
+            <div class="pca-name">Pierre HOUNMENOU</div>
+            <div class="pca-role">Créateur de la Collection Amour & Vérités</div>
+          </div>
+        </div>
+      </div>
+    </div><!-- fin .pierre-bio-col -->
+
+  </div><!-- fin .pierre-top -->
+
+  <!-- ── GALERIE MÉDIAS SUPPLÉMENTAIRES ── -->
+  <div class="pierre-media-extra reveal">
+    <h3 class="pme-title">Plus de contenus de Pierre</h3>
+    <div class="pme-grid">
+
+      <!-- SLOT 1 — Screenshot témoignage ou résultat -->
+      <div class="pme-slot" title="Screenshot de résultats / témoignage">
+        <!-- ✅ Remplace src="" et retire style="display:none"
+             Idéal : screenshot de tes ventes, tableau de bord, témoignage WhatsApp -->
+        <img src="" alt="Résultats" style="display:none">
+        <span class="pme-icon">📊</span>
+        <span class="pme-label">Screenshot résultats<br>ou témoignage</span>
+        <span class="pme-type">Image</span>
+      </div>
+
+      <!-- SLOT 2 — Vidéo ou photo événement -->
+      <div class="pme-slot" title="Vidéo courte ou photo événement">
+        <!-- ✅ Remplace src="" et retire style="display:none"
+             Idéal : vidéo TikTok, moment en public, conférence -->
+        <video src="" controls style="display:none"></video>
+        <span class="pme-icon">🎥</span>
+        <span class="pme-label">Vidéo courte<br>ou moment public</span>
+        <span class="pme-type">Vidéo</span>
+      </div>
+
+      <!-- SLOT 3 — Photo ou capture réseaux sociaux -->
+      <div class="pme-slot" title="Capture réseaux / photo lifestyle">
+        <!-- ✅ Remplace src="" et retire style="display:none"
+             Idéal : post viral, capture Instagram, photo lifestyle -->
+        <img src="" alt="Réseaux sociaux" style="display:none">
+        <span class="pme-icon">📱</span>
+        <span class="pme-label">Post viral<br>ou capture réseaux</span>
+        <span class="pme-type">Image</span>
+      </div>
+
+    </div>
+  </div><!-- fin .pierre-media-extra -->
+
+</section>
+
+<!-- ══════════════════════════════════════════════════════ -->
+<!-- SECTION FAQ                             -->
+<!-- ═══════════════════════════════════════ -->
+<section class="section section-faq">
+  <div class="faq-wrap reveal">
+    <span class="sec-label">Questions fréquentes</span>
+    <h2 class="sec-h2">Tes doutes, <em>mes réponses claires</em></h2>
+    <div class="faq-list-inner">
+      
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>Ce guide marche vraiment ou c'est de la théorie ?</span>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Chaque technique a été testée et adaptée à la réalité africaine — pas des théories importées d'Occident. Tu appliques dès le premier chapitre. Des hommes à Abidjan, Cotonou, Dakar ont changé leurs résultats en moins de 3 semaines.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>Je suis timide de nature — ce guide peut vraiment m'aider ?</span>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">C'est précisément pour toi qu'il a été écrit. La timidité n'est pas un défaut de caractère, c'est un manque de méthode. Le guide te donne des scripts précis, des étapes claires et des exercices progressifs pour la dépasser.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>En combien de temps je verrai des résultats concrets ?</span>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">La plupart des lecteurs appliquent les premières techniques dès la semaine 1 et voient un changement immédiat dans les réactions des femmes. En 3 semaines de pratique régulière, ton comportement change profondément.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>Ça marche aussi sur WhatsApp et Instagram ?</span>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Absolument. Un chapitre entier est dédié à la séduction digitale — WhatsApp, Instagram, TikTok. Les codes sont différents en ligne et le guide les traite séparément.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>Comment je reçois le guide après paiement ?</span>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Dès que ton paiement Mobile Money est confirmé, le guide PDF est envoyé directement sur ton WhatsApp en moins de 5 minutes. Pas de compte à créer, pas d'application à télécharger.</div>
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>Et si le guide ne me convient pas ?</span>
+        <div class="faq-icon">+</div>
+      </div>
+      <div class="faq-a">
+        <div class="faq-a-inner">Tu es remboursé intégralement dans les 7 jours suivant l'achat — sans question, sans condition. Un simple message WhatsApp suffit. Zéro risque pour toi.</div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIE -->
+<section class="section section-garantie">
+  <div class="garantie-box reveal">
+    <span class="gb-badge">Garantie Sans Risque</span>
+    <span class="gb-icon">🛡️</span>
+    <h3 class="gb-title">Satisfait ou Remboursé — 7 jours</h3>
+    <p class="gb-text">Si dans les 7 jours tu estimes que ce guide ne t'a apporté aucune valeur concrète, envoie un message sur WhatsApp et tu es remboursé intégralement. Sans question. Sans condition.</p>
+  </div>
+</section>
+
+<!-- NAV EBOOKS -->
+<nav class="ebook-nav">
+  <a href="index.html" class="nav-btn prev-btn">← Tous les guides</a>
+  <span class="nav-center">Guide 1 / 10</span>
+  <a href="ebook2.html" class="nav-btn next-btn">Reconquérir Son Ex →</a>
+</nav>
+
+<!-- WA FLOTTANT -->
+<div class="wa-float">
+  <div class="wa-bubble">Commander ce guide 📲</div>
+  <a href="https://wa.me/VOTRE_NUMERO?text=Bonjour+guide+%231" target="_blank" class="wa-btn">💬</a>
+</div>
+
+<script>
+
+// ── FAQ toggle ──────────────────────────
+function toggleFaq(el){
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if(!isOpen) el.classList.add('open');
+}
+
+// Compte à rebours
+function cd(){
+  let t=5*3600+42*60+17;
+  setInterval(()=>{
+    if(t<=0){t=24*3600;return;}t--;
+    document.getElementById('h').textContent=String(Math.floor(t/3600)).padStart(2,'0');
+    document.getElementById('m').textContent=String(Math.floor((t%3600)/60)).padStart(2,'0');
+    document.getElementById('s').textContent=String(t%60).padStart(2,'0');
+  },1000);
+}
+cd();
+// Reveal scroll
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');});},{threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
